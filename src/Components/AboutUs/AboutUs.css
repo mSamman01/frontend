@@ -7,7 +7,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* filter: brightness(50%);  */
 }
 
 .main-bg {
@@ -15,58 +14,60 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(50%); /* Darkens the background */
+    filter: brightness(50%); /* Darkens the background for contrast */
     z-index: -1;
 }
 
-.container-main {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
+.about-us-container {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
     padding: 30px;
-    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
     border-radius: 10px;
+    max-width: 800px;
+    text-align: justify;
     color: white;
-    /* transition: transform 0.3s ease-in-out; */
-
 }
 
-.header-main{
+.header-aboutus{
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 9px;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
-.compliance-text{
-    color: #4c00b4;
-    font-size: 48px;
-    font-weight: 700;
+.aboutus-text {
     text-align: center;
-    
+    font-size: 32px;
+    font-weight: bold;
+    color: #4c00b4;
+    margin-bottom: 7px;
 }
 
-.underline-main {
-    width: 90px;
+.underline-aboutus {
+    width: 120px;
     height: 6px;
     background: #4c00b4;
     border-radius: 9px;
     transition: width 0.4s ease-in-out;
 }
-.header-main:hover .underline-main {
-    width: 120px;
+.header-aboutus:hover .underline-aboutus {
+    width: 150px;
 }
 
-.main-options{
-    margin-top: 55px;
+.about-us-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.return-main {
     display: flex;
-    flex-direction: column;
-    gap: 25px;
+    justify-content: center; /* Centers the button horizontally */
+    margin-top: 30px; /* Adjusts spacing between the text and button */
 }
 
-.main-btns  {
+.return-btn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -81,19 +82,7 @@
     transition: background 0.3s ease-in-out, transform 0.2s;
 }
 
-.main-btns:hover {
+.return-btn:hover {
     background: #36008d;
     transform: scale(1.05);
-}
-
-.compliance-btns {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Adds space between the buttons */
-}
-
-.about-us-btn {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px; /* Adds space between the two sections */
 }
