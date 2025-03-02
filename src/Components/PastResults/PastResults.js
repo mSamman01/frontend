@@ -46,7 +46,7 @@ export default function PastResults() {
             <span style={{ color: "white" }}>to</span>
             <input
               type="date"
-              name="end"
+              name="end" 
               value={timeFrame.end}
               onChange={handleTimeFrameChange}
             />
