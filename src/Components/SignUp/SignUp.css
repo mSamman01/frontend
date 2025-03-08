@@ -123,6 +123,7 @@ input {
     color: #fff;
     background: #4c00b4;
     border-radius: 50px;
+    border: none;
     font-size: 19px;
     font-weight: 700;
     cursor: pointer;

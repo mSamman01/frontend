@@ -18,3 +18,121 @@
     filter: brightness(50%); /* Darkens the background */
     z-index: -1;
 }
+
+.container-new-check {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 30px;
+    background: rgba(0, 0, 0, 0.7); /* Dark semi-transparent background */
+    border-radius: 10px;
+    color: white;
+    /* transition: transform 0.3s ease-in-out; */
+
+}
+
+.header-check{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.check-text{
+    color: #4c00b4;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+.underline-check {
+    width: 90px;
+    height: 6px;
+    margin-bottom: 20px;
+    background: #4c00b4;
+    border-radius: 9px;
+    transition: width 0.4s ease-in-out;
+}
+.header-check:hover .underline-check {
+    width: 120px;
+}
+
+.dropdown-container {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.control-dropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    background: white;
+    color: #333;
+}
+
+.control-description {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.upload-section {
+    margin-top: 20px;
+}
+
+.upload-label {
+    display: inline-block;
+    background: #4c00b4;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.upload-label:hover {
+    background: #36008d;
+    transform: scale(1.05);}
+
+.upload-input {
+    display: none;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+
+.new-check-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 180px;
+    height: 59px;
+    color: #fff;
+    background: #4c00b4;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.new-check-btns:hover {
+    background: #36008d;
+    transform: scale(1.05);
+}
+
+
